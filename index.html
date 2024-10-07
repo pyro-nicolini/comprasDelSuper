@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- CSS -->
 </head>
 <body>
+    <h1>Lista Del Súper</h1>
    <!-- Formulario para agregar categorías e ítems -->
    <div class="form-container">
-    <h3>Agregar Categoría</h3>
+    <h3>Agrega Tus Categorías</h3>
+    <p>"Refri", "Despensa", "Colaciones"</p>
     <input type="text" id="newCategory" placeholder="Nueva Categoría">
     <button id="addCategoryBtn">Agregar Categoría</button>
 
-    <h3>Agregar Ítem a Categoría</h3>
+    <h3>Agregar Productos a Categoría</h3>
     <select id="categorySelector">
         <option value="">Seleccionar Categoría</option>
     </select>
     <input type="text" id="newItem" placeholder="Nuevo Ítem">
-    <button id="addItemBtn">Agregar Ítem</button>
+    <button id="addItemBtn">Agregar Producto a la lista</button>
 </div>
 
 <!-- Categorías e ítems se agregarán aquí -->
@@ -26,7 +28,7 @@
 
 <!-- Resumen de Elementos Activados -->
 <div class="summary" id="summary">
-    <h3>Resumen de Compras</h3>
+    <h3>Lista de Compras</h3>
     <ul id="activeItemsList"></ul>
 </div>
     <script src="assets/js/js.js"></script>

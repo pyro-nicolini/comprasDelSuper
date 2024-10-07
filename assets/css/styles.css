@@ -1,111 +1,132 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-color: #f4f4f4;
-    padding: 20px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+#newCategory,
+#newItem {
+  width: 240px !important;
 }
 
 .container {
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: white;
+  width: 240px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  padding-right: 30px;
 }
 
 .switch {
-    position: relative;
-    width: 60px;
-    height: 34px;
-    border-radius: 34px;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: inline-block;
-    margin-left: 10px;
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .switch::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: white;
-    transition: transform 0.3s;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s;
 }
 
 .switch.active {
-    background-color: #4caf50;
+  background-color: #ff00c3;
 }
 
 .switch.active::before {
-    transform: translateX(26px);
+  transform: translateX(17px);
 }
 
 .summary {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: white;
-    width: 300px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-right: 30px;
+  background-color: rgb(201, 201, 201);
+  min-width: 260px;
+}
+
+h1 {
+  text-align: center;
+  color: #0098b7;
+}
+h3 {
+  text-align: center;
+  color: #d401b4;
 }
 
 .category-title {
-    font-weight: bold;
-    margin-top: 10px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .category-item {
-    display: flex;
-    justify-content: space-between; /* Alinea el texto y el interruptor a los extremos */
-    align-items: center; /* Centra verticalmente */
-    padding: 5px 0;
+  display: flex;
+  justify-content: space-between; /* Alinea el texto y el interruptor a los extremos */
+  align-items: center; /* Centra verticalmente */
 }
 
-
 .bought-item {
-    text-decoration: line-through;
-    color: gray;
+  text-decoration: line-through;
+  color: rgb(255, 0, 208);
 }
 
 /* Estilos para el formulario de categorías e ítems */
 .form-container {
-    width: 300px;
-    margin-bottom: 20px;
+  width: 260px;
+  margin-bottom: 40px;
 }
 
 .form-container input,
 .form-container select,
 .form-container button {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  width: 260px;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: 3px solid #e900af;
 }
 
 .form-container button {
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #ff0693;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .form-container button:hover {
-    background-color: #45a049;
+  background-color: #5600d7;
 }
 
 li {
-    display: flex;
-    justify-content: space-between; /* Alinea el texto e ítems a los extremos */
-    align-items: center; /* Centra verticalmente */
-    padding: 5px 0;
+  display: flex;
+  justify-content: space-between; /* Alinea el texto e ítems a los extremos */
+  align-items: center; /* Centra verticalmente */
+  padding: 5px 0;
+}
+
+#summary {
+  color: #0098b7;
 }
