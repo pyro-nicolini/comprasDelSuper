@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CursoGIT con cambio</title>
+    <title>Compras del super</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- CSS -->
 </head>
 <body>
-    <p>
-        Adios mundo!
-    </p>
+   <!-- Formulario para agregar categorías e ítems -->
+   <div class="form-container">
+    <h3>Agregar Categoría</h3>
+    <input type="text" id="newCategory" placeholder="Nueva Categoría">
+    <button id="addCategoryBtn">Agregar Categoría</button>
+
+    <h3>Agregar Ítem a Categoría</h3>
+    <select id="categorySelector">
+        <option value="">Seleccionar Categoría</option>
+    </select>
+    <input type="text" id="newItem" placeholder="Nuevo Ítem">
+    <button id="addItemBtn">Agregar Ítem</button>
+</div>
+
+<!-- Categorías e ítems se agregarán aquí -->
+<div id="categoriesContainer"></div>
+
+<!-- Resumen de Elementos Activados -->
+<div class="summary" id="summary">
+    <h3>Resumen de Compras</h3>
+    <ul id="activeItemsList"></ul>
+</div>
+    <script src="assets/js/js.js"></script>
 </body>
 </html>
