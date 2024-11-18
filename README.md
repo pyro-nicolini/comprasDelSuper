@@ -1,11 +1,5 @@
 https://pyro-nicolini.github.io/comprasDelSuper/
 
-Primer Respositorio Público de mi account..
+Primer Respositorio Público de mi Github..
+Comenzó como ejercicio y se convirtio en una herramienta de utilidad para las compras del súper..
 
-Partio como ejercicio y aprovechando el espacio, se convirtio en una herramienta de utilidad para las compras del súper..
-
-
-## Commit Jefferson López
-1. Intervención:
-   ```bash
-   Hola, esta es una modificacion al fork del repo original.
